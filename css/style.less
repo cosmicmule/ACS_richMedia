@@ -1,0 +1,353 @@
+    html,body{
+        margin:0;padding:0;
+    }
+
+    canvas {
+      -webkit-transform: translateZ(0);
+    }
+
+    canvas{position: absolute;}
+
+
+    #ad {
+        position:absolute;
+        left:0;
+        top:0;
+        width: @adWidth;
+        height: @adHeight;
+        display: block;
+        user-select: none;
+
+            .sprite{
+              background: url(../images/sprite.png) 0 0 no-repeat;
+            }
+
+            .spriteCar{
+              background: url(../images/cars.png) 0 0 no-repeat;
+            }
+
+            .spriteDateDisplay{
+              background: url(../images/date.jpg) 0 0 no-repeat;
+            }
+
+
+            #banner{
+                position:absolute;
+                top:0;
+                left:0;
+                width:(@adWidth - 2);
+                height:(@adHeight - 2);
+                border:1px solid black;
+                overflow:hidden;
+                background: url(../images/bg.jpg) 0 0 no-repeat;
+
+
+
+                #bgChange{
+                  position:absolute;
+                  top:0;
+                  left:0;
+                  width:(@adWidth - 2);
+                  height:600px;
+                  overflow:hidden;
+                  background: url(../images/bg2.jpg) 0 0 no-repeat;
+                  opacity: 0;
+                }
+
+                #sign{
+                  position:absolute;
+                  top:191px;
+                  left:0;
+                  width:(@adWidth - 2);
+                  height:300px;
+                  background: url(../images/sign.png) 0 0 no-repeat;
+                }
+
+                #logos{
+                  position:absolute;
+                  top: 515px;
+                  left: 32px;
+                  width: 298px;
+                  height: 300px;
+                  background: url(../images/logos.png) 0 0 no-repeat;
+                }
+
+                #comeCelebrate{
+                  position:absolute;
+                  top: 29px;
+                  left: 63px;
+                  width: 178px;
+                  height: 27px;
+                  background-position: 0 0;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #yr20Super{
+                  position:absolute;
+                  top: 76px;
+                  left: 23px;
+                  width: 259px;
+                  height: 77px;
+                  background-position: 0 -29px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #pricePoint{
+                  position:absolute;
+                  top: 76px;
+                  left: 45px;
+                  width: 259px;
+                  height: 157px;
+                  background-position: 0 -680px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #buy{
+                  position:absolute;
+                  top: 228px;
+                  left: 43px;
+                  width: 199px;
+                  height: 57px;
+                  background-position: 0 -831px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #atAutoClubSpeedway{
+                  position:absolute;
+                  top: 162px;
+                  left: 45px;
+                  width: 208px;
+                  height: 27px;
+                  background-position: 0 -103px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #jeff{
+                  position:absolute;
+                  top: 68px;
+                  left: 23px;
+                  width: 259px;
+                  height: 97px;
+                  background-position: 0 -132px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #matt{
+                  position:absolute;
+                  top: 68px;
+                  left: 27px;
+                  width: 259px;
+                  height: 97px;
+                  background-position: 0 -229px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #kyle{
+                  position:absolute;
+                  top: 68px;
+                  left: 59px;
+                  width: 180px;
+                  height: 95px;
+                  background-position: 0 -328px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #jimmy{
+                  position:absolute;
+                  top: 68px;
+                  left: 29px;
+                  width: 259px;
+                  height: 88px;
+                  background-position: 0 -424px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #yr20Large{
+                  position:absolute;
+                  top: 66px;
+                  left: 29px;
+                  width: 259px;
+                  height: 128px;
+                  background-position: 0 -511px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #yr20Small{
+                  position:absolute;
+                  top: 331px;
+                  left: 29px;
+                  width: 259px;
+                  height: 28px;
+                  background-position: 0 -644px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+
+
+                #dDisplay_1{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 0;
+                  background-repeat: no-repeat;
+                }
+
+                #dDisplay_2{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 -58px;
+                  background-repeat: no-repeat;
+                  opacity:0;
+                }
+
+                #dDisplay_2{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 -58px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #dDisplay_3{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 -121px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #dDisplay_4{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 -183px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+                #dDisplay_5{
+                  position:absolute;
+                  top: 265px;
+                  left: 84px;
+                  width: 259px;
+                  height: 60px;
+                  background-position: 0 -243px;
+                  background-repeat: no-repeat;
+                  opacity: 0;
+                }
+
+
+
+
+                #carsHolders{
+
+                  #jeff_car{
+                    position:absolute;
+                    top: 310px;
+                    left: -261px;
+                    width: 289px;
+                    height: 145px;
+                    background-position: 0 0;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                  #matt_car{
+                    position:absolute;
+                    top: 310px;
+                    left: -261px;
+                    width: 279px;
+                    height: 115px;
+                    background-position: 0 -147px;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                  #kyle_car{
+                    position:absolute;
+                    top: 310px;
+                    left: -291px;
+                    width: 369px;
+                    height: 139px;
+                    background-position: 0 -276px;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                  #jimmy_car{
+                    position:absolute;
+                    top: 282px;
+                    left: -381px;
+                    width: 439px;
+                    height: 149px;
+                    background-position: -300px 0;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                  #cargroup{
+                    position:absolute;
+                    top: 332px;
+                    left: -459px;
+                    width: 499px;
+                    height: 199px;
+                    background-position: 0 -420px;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                  #cargroup2{
+                    position:absolute;
+                    top: 332px;
+                    left: -459px;
+                    width: 499px;
+                    height: 199px;
+                    background-position: 0 -610px;
+                    background-repeat: no-repeat;
+                    opacity: 1;
+                  }
+
+                }
+
+
+
+
+
+
+
+
+             // banner
+            }
+
+    // ad
+    }
+
+
+    // Global Variables
+    @import "libs/MC_variables.less";
+    // Global KeyFrames
+    @import "libs/MC_keyframes.less";

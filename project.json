@@ -1,0 +1,10 @@
+{
+    "adName":   "ACS RichMedia",
+    "width":    "300",
+    "height":   "600",
+    "paths": {
+        "output":   "output",
+        "deploy":   "deploy",
+        "temp":     "temp"
+    }
+}
